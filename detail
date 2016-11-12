@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
+Version: 4.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+<!-- BEGIN HEAD -->
+        <head>
+        <meta charset="utf-8" />
+        <title>中央厨房</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="" name="description" />
+        <meta content="" name="author" />
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-editable/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/bootstrap-editable/inputs-ext/address/address.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL STYLES -->
+        <link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+        <link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME GLOBAL STYLES -->
+        <!-- BEGIN THEME LAYOUT STYLES -->
+        <link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+        <link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+        <link href="../assets/global/plugins/dropzone/basic.min.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+
+        <link href="../css.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+body {
+	font-family:"微软雅黑";
+}
+</style>
+
+        <!-- END HEAD -->
+
+        <body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top"> 
+          <!-- BEGIN HEADER INNER -->
+          <div class="page-header-inner "> 
+    <!-- BEGIN LOGO -->
+    <div class="page-logo"> <a href="index.html"> <img src="../logo.png" alt="logo" /> </a></div>
+    <div class="chufang-menu">
+              <ul>
+        <li class="chufang-menu-style">线索</li>
+        <li>选题</li>
+        <li>活动</li>
+        <li>日历</li>
+      </ul>
+            </div>
+    <!-- 左侧收回
+                    <div class="menu-toggler sidebar-toggler"> </div>
+                    -- > 
+    
+    <!-- END LOGO --> 
+    <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
+    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a> 
+    <!-- END RESPONSIVE MENU TOGGLER --> 
+    <!-- BEGIN TOP NAVIGATION MENU -->
+    <div class="top-menu">
+              <ul class="nav navbar-nav pull-right">
+        <!-- BEGIN INBOX DROPDOWN --> 
+        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+        <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar"> <a href="javascript:;" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class=" fa fa-cog" style="font-size:24px;"></i> <span class="chufang-style15"></span> </a>
+                  <ul class="dropdown-menu">
+            <li>
+                      <ul class="dropdown-menu-list"  data-handle-color="#637283">
+                <li> <a href="#"> <i class=" fa fa-cogs"></i><span> 系统设置 </span> </a> </li>
+                <li> <a href="#"> <i class="fa fa-cogs"></i><span> 其他设置 </span> </a> </li>
+              </ul>
+                    </li>
+          </ul>
+                </li>
+        <!-- END INBOX DROPDOWN --> 
+        <!-- BEGIN USER LOGIN DROPDOWN --> 
+        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+        <li class="dropdown dropdown-user"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar3_small.jpg" /> <span class="chufang-style16"></span> </a>
+                  <ul class="dropdown-menu dropdown-menu-default">
+            <li> <a href="page_user_profile_1.html"> <i class="icon-user"></i> 我的资料</a> </li>
+            <li> <a href="app_inbox.html"> <i class="icon-envelope-open"></i> 我的报题 <span class="badge badge-danger"> 3 </span> </a> </li>
+            <li> <a href="app_todo.html"> <i class="icon-rocket"></i> 我的线索 <span class="badge badge-success"> 7 </span> </a> </li>
+            <li class="divider"> </li>
+            <li> <a href="page_user_lock_1.html"> <i class="icon-lock"></i> 注销 </a> </li>
+          </ul>
+                </li>
+        <!-- END USER LOGIN DROPDOWN --> 
+        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+      </ul>
+            </div>
+    <!-- END TOP NAVIGATION MENU --> 
+  </div>
+          <!-- END HEADER INNER --> 
+        </div>
+<!-- END HEADER -->
+<div class="chufang-style1">
+          <div class="left">
+    <h1 class="huiju-resourceGuid"></h1>
+  </div>
+          <div class="right"><a href="index-线索列表.html"><i class="fa fa-mail-reply" style="margin-right:5px;"></i>返回线索列表</a></div>
+        </div>
+<!-- BEGIN HEADER & CONTENT DIVIDER -->
+<div class="clearfix"> </div>
+<!-- END HEADER & CONTENT DIVIDER --> 
+<!-- BEGIN CONTAINER -->
+<div> 
+          <!-- BEGIN SIDEBAR -->
+          <div class="page-sidebar-wrapper"> 
+    <!-- BEGIN SIDEBAR --> 
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing --> 
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+     <div class="page-content-wrapper">
+              <div class="page-content2">
+        <div class="col-md-11" align="center">
+                  <h3 class="huiju-title"></h3>
+                </div>
+        <div class="col-md-11" style="margin:20px 0px">
+                  <div class="left chufang-font2 huiju-publishTime"></div>&nbsp;&nbsp;<span></span>
+                  <div class="right" id="queryList">
+            <a class="huiju-sourceAddr"><button data-toggle="dropdown" class="btn btn-default">原文</button></a>
+            <div class="btn-group">
+                      <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                      <ul class="dropdown-menu pull-right">
+                <li> <a href="javascript:;"> 其他 </a> </li>
+                <li> <a href="javascript:;"> 其他 </a> </li>
+                <li> <a href="javascript:;"> 其他 </a> </li>
+              </ul>
+                    </div>
+          </div>
+                </div>
+        <div class="col-md-11 huiju-content">  </div>
+      </div>
+            </div>
+  </div>
+          <!-- END SIDEBAR --> 
+        </div>
+<!-- END SIDEBAR --> 
+<!-- BEGIN CONTENT --><!-- END CONTAINER --> 
+
+<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]--> 
+
+<script src="../assets/pages/scripts/form-dropzone.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/dropzone/dropzone.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<!-- BEGIN CORE PLUGINS --> 
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script> 
+<!-- END CORE PLUGINS --> 
+<!-- BEGIN PAGE LEVEL PLUGINS --> 
+<script src="../assets/global/plugins/select2/js/select2.full.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/jquery.mockjax.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-editable/bootstrap-editable/js/bootstrap-editable.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-editable/inputs-ext/address/address.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-editable/inputs-ext/wysihtml5/wysihtml5.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-typeahead/bootstrap3-typeahead.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN THEME GLOBAL SCRIPTS --> 
+<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script> 
+<!-- END THEME GLOBAL SCRIPTS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/form-editable.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<!-- BEGIN THEME LAYOUT SCRIPTS --> 
+<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script> 
+<script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script> 
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script> 
+<!-- END THEME LAYOUT SCRIPTS --> 
+<script src="../assets/pages/scripts/iElevator.js" type="text/javascript"></script> 
+
+<script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	daily.detail();
+</script>
+
+
+<script>
+	// 获取Markdown中的标题
+	var $demo = $('#demo'),
+		$titles = $('dt'),
+		$nav = $demo.find('.list'),
+		$highlight = $demo.find('.highlight'),
+		STR = '';
+	
+	// 填充标题
+	$titles.each(function(){
+		STR += '<li><a>'+ $(this).text() +'</a></li>';
+	});
+	$nav.html(STR);
+	// 调用ielevator
+	$demo.ielevator({
+	    floors: $titles,
+	    btns: $('#demo li'),
+	    sticky: 10,
+	    selected: $highlight
+	});
+</script>
+</body>
+        <script type ="text/javascript">
+$(document).ready(function(){  
+$('#queryList button').addClass('chufang-btn-style');
+});
+    </script>
+        <script>
+$(function () {
+            $("table tr").mouseover(function () {
+                $(this).find(".fa-trash").show("fast");
+            });
+            $("table tr").mouseleave(function () {
+                $(this).find(".fa-trash").hide("fast");
+            });
+        });
+</script>
+</html>
