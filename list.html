@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
+Version: 4.5.2
+Author: KeenThemes
+Website: http://www.keenthemes.com/
+Contact: support@keenthemes.com
+Follow: www.twitter.com/keenthemes
+Like: www.facebook.com/keenthemes
+Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
+License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
+-->
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+    <!--<![endif]-->
+<!-- BEGIN HEAD --><head>
+<meta charset="utf-8" />
+<title>中央厨房</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta content="width=device-width, initial-scale=1" name="viewport" />
+<meta content="" name="description" />
+<meta content="" name="author" />
+<!-- BEGIN GLOBAL MANDATORY STYLES -->
+<link href="../assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+<!-- END GLOBAL MANDATORY STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL STYLES -->
+<link href="../assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+<link href="../assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+<!-- END THEME GLOBAL STYLES -->
+<!-- BEGIN THEME LAYOUT STYLES -->
+<link href="../assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+<link href="../assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+<!-- END THEME LAYOUT STYLES -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/select2/css/select2-bootstrap.min.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-modal/css/bootstrap-modal-bs3patch.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-modal/css/bootstrap-modal.css" rel="stylesheet" type="text/css" />
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/clockface/css/clockface.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-markdown/css/bootstrap-markdown.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/bootstrap-summernote/summernote.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/typeahead/typeahead.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/dropzone/dropzone.min.css" rel="stylesheet" type="text/css" />
+<link href="../assets/global/plugins/dropzone/basic.min.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-multiselect/css/bootstrap-multiselect.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<link href="../assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+        <link href="../assets/global/plugins/icheck/skins/all.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL PLUGINS -->
+<link href="../css.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+body {
+	font-family:"微软雅黑";
+}
+.daily-author{
+	height: 28px;
+	cursor: pointer;
+}
+
+.daily-author span{
+	line-height:27px;
+	font-size: 14px;
+	color: #333;
+}
+.daily-author-c{
+	position: absolute;
+	top:145px;
+	height: 35px;
+	background: #fff;
+	display: none;
+}
+.daily-author-c input{
+	border: 1px solid #dcdcdc;
+	border-radius:2px ;
+	height: 28px;
+}
+.daily-author-c button{
+	height: 28px;
+	margin-left:1px;
+	border: 1px  solid #dcdcdc;
+}
+canvas {
+    background-color: #f3f3f3;
+    -webkit-box-shadow: 3px 3px 3px 0 #e3e3e3;
+    -moz-box-shadow: 3px 3px 3px 0 #e3e3e3;
+    box-shadow: 3px 3px 3px 0 #e3e3e3;
+    border: 1px solid #c3c3c3;
+    height: 100px;
+    margin: 6px 0 0 6px;
+}
+</style>
+</head>
+<!-- END HEAD -->
+
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white"  ng-controller="AppController" nv-file-drop="" uploader="uploader">
+<!-- BEGIN HEADER -->
+<div class="page-header navbar navbar-fixed-top"> 
+  <!-- BEGIN HEADER INNER -->
+  <div class="page-header-inner "> 
+    <!-- BEGIN LOGO -->
+    <div class="page-logo"> <a href="index.html"> <img src="../logo.png" alt="logo" /> </a></div>
+    <div class="chufang-menu">
+      <ul>
+        <li class="chufang-menu-style">线索</li>
+        <li>选题</li>
+        <li>活动</li>
+        <li>日历</li>
+      </ul>
+    </div>
+    <!-- 左侧收回
+                    <div class="menu-toggler sidebar-toggler"> </div>
+                    -- > 
+    
+    <!-- END LOGO --> 
+    <!-- BEGIN RESPONSIVE MENU TOGGLER --> 
+    <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse"> </a> 
+    <!-- END RESPONSIVE MENU TOGGLER --> 
+    <!-- BEGIN TOP NAVIGATION MENU -->
+    <div class="top-menu">
+      <ul class="nav navbar-nav pull-right">
+        <!-- BEGIN INBOX DROPDOWN --> 
+        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+        <!--<li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar"> <a href="javascript:;" class="dropdown-toggle " data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <i class=" fa fa-cog" style="font-size:24px;"></i> <span class="chufang-style15"></span> </a>
+          <ul class="dropdown-menu">
+            <li>
+              <ul class="dropdown-menu-list"  data-handle-color="#637283">
+                <li> <a href="#"> <i class=" fa fa-cogs"></i><span> 系统设置 </span> </a> </li>
+                <li> <a href="#"> <i class="fa fa-cogs"></i><span> 其他设置 </span> </a> </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+		-->
+        <!-- END INBOX DROPDOWN --> 
+        <!-- BEGIN USER LOGIN DROPDOWN --> 
+        <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+        <li class="dropdown dropdown-user"> <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true"> <img alt="" class="img-circle" src="../assets/layouts/layout/img/avatar3_small.jpg" /> <span class="chufang-style16"></span> </a>
+          <ul class="dropdown-menu dropdown-menu-default">
+            <li> <a href="page_user_lock_1.html"> <i class="icon-lock"></i> 注销 </a> </li>
+          </ul>
+        </li>
+        <!-- END USER LOGIN DROPDOWN --> 
+        <!-- BEGIN QUICK SIDEBAR TOGGLER -->
+      </ul>
+    </div>
+    <!-- END TOP NAVIGATION MENU --> 
+  </div>
+  <!-- END HEADER INNER --> 
+</div>
+<!-- END HEADER -->
+<div class="chufang-style1">
+  <div class="left">
+    <h1>线索</h1>
+  </div>
+  <div class="right">
+    <button type="button" class="btn red chufang-yuanjiao" data-toggle="modal" data-target="#responsive">新建线索</button>
+  </div>
+</div>
+<!-- BEGIN HEADER & CONTENT DIVIDER -->
+<div class="clearfix"> </div>
+<!-- END HEADER & CONTENT DIVIDER --> 
+<!-- BEGIN CONTAINER -->
+<div class="page-container"> 
+  <!-- BEGIN SIDEBAR -->
+  <div class="page-sidebar-wrapper"> 
+    <!-- BEGIN SIDEBAR --> 
+    <div class="page-sidebar navbar-collapse collapse"> 
+      <ul class="page-sidebar-menu  page-header-fixed " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+        <!-- DOC: To remove the sidebar toggler from the sidebar you just need to completely remove the below "sidebar-toggler-wrapper" LI element -->
+        <li class="sidebar-toggler-wrapper hide"> 
+          <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
+          <div class="sidebar-toggler"> </div>
+          <!-- END SIDEBAR TOGGLER BUTTON --> 
+        </li>
+        <!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
+        <li class="heading" style=" margin-top:0px;"> <span class="chufang-font1">线索来源</span> </li>
+        <ul class="sub-menu " style="display:block;">
+          <li class="nav-item  active open daily-all"> <a  class="nav-link nav-toggle"><span class="title">全部来源</span></a>
+          <li class="nav-item"> <a href="javascript:;" class="nav-link "> <span class="title" id="2048">微信</span> </a> </li>
+          <li class="nav-item  "> <a href="javascript:;" class="nav-link ">  <span class="title" id="4096">微博</span> </a> </li>
+          <li class="nav-item"> <a href="javascript:;" class="nav-link ">  <span class="title" id="8192">站点</span> </a> </li>
+          <li class="nav-item  "> <a href="javascript:;" class="nav-link "> <span class="title" id="1024">互联网热点</span> </a> </li>
+          <li class="nav-item"> <a href="javascript:;" class="nav-link "> <span class="title" id="16384">外电</span> </a> </li>
+          <li class="nav-item  "> <a href="javascript:;" class="nav-link ">  <span class="title" id="32768">自建</span> </a> </li>
+        </ul>
+        <li class="heading"> <span class="chufang-font1">自定义</span> <i class="fa fa-cog" style="font-size:10px; color:#999999; float:right; margin-top:4px;"></i> </li>
+        <ul class="sub-menu " style="display:block;">
+          <li class="nav-item"><a  class="nav-link nav-toggle"> <span class="title">江蘇新聞</span> </a> </li>
+        </ul>
+      </ul>
+      <!-- END SIDEBAR MENU --> 
+      <!-- END SIDEBAR MENU --> 
+    </div>
+    <!-- END SIDEBAR --> 
+  </div>
+  <!-- END SIDEBAR --> 
+  <!-- BEGIN CONTENT -->
+  <div class="page-content-wrapper"> 
+    <!-- BEGIN CONTENT BODY -->
+    <div class="page-content">
+      <div class="chufang-content-style1">
+        <div class="chufang-content-style">
+          <div class="left">
+            <h2 class="huiju-h2">全部来源</h2>
+          </div>
+          <div class="right">
+            <div class="input-icon input-icon-sm right"> <i id="searchIcon" class="fa fa-search chufang-style13"></i>
+              <input id="search" type="search" class="form-control" placeholder="全文检索" >
+            </div>
+          </div>
+          <div style="clear:both"></div>
+        </div>
+        <div id="queryList" class="chufang-select clearfix">
+          <div class="left daily-author-left" style="padding-right: 8px;">
+          	<div class="daily-author">
+          		<span>作者：全部</span>&nbsp;<b class="caret"></b>
+          	</div>
+          	<div class="daily-author-c">
+          		<input type="text" value="" /><button class=" daily-close" ><i class="glyphicon glyphicon-remove-circle"></i></button>
+          	</div>
+            <!-- <select class="mt-multiselect btn btn-default selectId" data-label="left" multiple="multiple" data-width="100%" data-filter="true" data-title="作者" >
+             
+             <option value="2">进行中</option>
+              <option value="3" class="aaa">已终止</option>
+              <option value="4">已完成</option>
+              <option value="5">待审</option>
+            </select>-->
+          </div>
+          <div class="left">
+            <select  class="mt-multiselect btn btn-default selectId1" multiple="multiple" data-label="left" data-width="100%" data-filter="true" data-title="类型"  >
+              <option value="1">视频</option>
+              <option value="2">音频</option>
+              <option value="4">图片</option>
+              <option value="8">文档</option>
+              <option value="128">其它</option>
+            </select>
+          </div>
+          <div class="left">
+            <select  class="mt-multiselect btn btn-default selectId2" multiple="multiple" data-label="left" data-width="100%" data-filter="true" data-title="状态" >
+              <option value="0">终止</option>
+              <option value="1">完成</option>
+            </select>
+          </div>
+          <div class="left">
+            <div class="btn-group">
+              <button data-toggle="dropdown" class="btn btn-default" id="eventTimeTitle">发布时间 <i class="fa fa-caret-down"></i></button>
+              <div class="dropdown-menu pull-left">
+                <div class="chufang-style14 ">
+                  <table>
+                    <tr>
+                      <td class="chufang-height"><div class="icheck-list">
+                          <label>
+                            <input type="radio" name="radio1" class="icheck">
+                          </label>
+                        </div></td>
+                      <td><input  type="text" class="form-control input-xsmall margin-right-10 date1"></td>
+                      <td><select  class="form-control form1">
+                          <option>年</option>
+                          <option>月</option>
+                          <option>日</option>
+                        </select></td>
+                      <td width="50px" align="center">以内</td>
+                    </tr>
+                    <tr>
+                      <td class="chufang-height"><div class="icheck-list">
+                          <label>
+                            <input type="radio" name="radio1" class="icheck">
+                          </label>
+                        </div></td>
+                      <td><input  type="text" class="form-control input-xsmall margin-right-10  date2"></td>
+                      <td><select  class="form-control form2">
+                          <option>分钟</option>
+                          <option>小时</option>
+                        </select></td>
+                      <td width="50px" align="center">以外</td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <td class="chufang-height"><div class="icheck-list">
+                          <label>
+                            <input type="radio" name="radio1" class="icheck">
+                          </label>
+                        </div></td>
+                      <td align="center"><div class="date-picker input-daterange" data-date="10/11/12" data-date-format="yyyy/dd/mm">
+                          <div class="chufang-time">
+                            <div class="input-icon right"> <i class="fa fa-calendar chufang-time-2"></i>
+                              <input type="text" class="form-control form3" name="from">
+                            </div>
+                          </div>
+                          <span style="float:left; margin:5px;"> - </span>
+                          <div class="chufang-time">
+                            <div class="input-icon right"> <i class="fa fa-calendar chufang-time-2"></i>
+                              <input type="text" class="form-control form4" name="to">
+                            </div>
+                          </div>
+                        </div>
+                        </td>
+                    </tr>
+                    <tr>
+                      <TD></TD>
+                      <tD colspan="3" height="40px"><button type="button" class="btn red chufang-yuanjiao chufang-button-style margin-right-10 daily-yes">确定</button>
+                        <button type="button" class="btn red chufang-yuanjiao btn-outline chufang-button-style daily-no">取消</button></tD>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chufang-content-style" > 共有<font style="color:#333; font-size:14px;" class="huiju-total"></font>条符合条件 <i class="fa fa-refresh chufang-style13" style="margin-left:5px"></i>
+        <div style="clear:both"></div>
+      </div>
+      <div class="portlet-body">
+        <div class="table-scrollable table-scrollable-borderless" id="queryList">
+          <table class="table table-style-hover2 table-light">
+            <thead>
+              <tr class="uppercase">
+                <th width="23%"> 标题 </th>
+                <th width="7%"> 作者 </th>
+                <th width="7%"> 来源 </th>
+                <th width="7%"> 类型 </th>
+                <th width="7%"> 状态 </th>
+                <th width="13%"> 发布时间 </th>
+                <th width="4%"></th>
+                <th width="9%"> </th>
+              </tr>
+            </thead>
+            <tbody id="selectTopicList" class="huiju-list">
+              <!--<tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>
+			  <tr>
+                <td class="chufang-font5"><a href="#">习近平：弘扬伟大长征精神 走好今天的长征路</a></td>
+                <td> Mark </td>
+                <td> 重要 </td>
+                <td> 一般 </td>
+                <td><i class="fa fa-check-circle-o chufang-color5-1"> </i> 完成</td>
+                <td>2016/11/11 15:20</td>
+                <td><button data-toggle="dropdown" class="btn btn-default">原文</button></td>
+                <td><div class="btn-group">
+                    <button data-toggle="dropdown" class="btn btn-default">分发 <i class="fa fa-caret-down" style="color:#111"></i></button>
+                    <ul class="dropdown-menu chufang-xiala-style">
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                      <li> <a href="javascript:;"> 其他 </a> </li>
+                    </ul>
+                  </div></td>
+              </tr>-->
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTENT BODY --> 
+  </div>
+  <!-- END CONTENT --> 
+  <!-- BEGIN QUICK SIDEBAR --> 
+  
+</div>
+
+
+
+
+
+<div id="responsive" class="modal"  data-width="810">
+  <div class="modal-header"> <span class="modal-title">新建线索</span> </div>
+  <div class="modal-body">
+    <div class="scroller" style="height:700px;">
+    <div class="form-group chufang-table1-style-5">
+		<label class="chufang-table1-style-1" for="form_control_1">标题
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<div class="form"><form action="#" class="form-horizontal form-bordered"><input id="selectTitle" type="text" class="form-control" maxlength="25" name="defaultconfig" id="inputError"></form></div>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">来源
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<select class="bs-select form-control input-large chufang-style22">
+              <option value="AF">上报选题</option>
+              <option value="AL">自主选题</option>
+            </select>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">重要性
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<select class="bs-select form-control input-large chufang-style22">
+              <option value="AF">一般</option>
+              <option value="AL">重要</option>
+            </select>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">紧急性
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<select class="bs-select form-control input-large chufang-style22">
+              <option value="AF">一般</option>
+              <option value="AL">重要</option>
+            </select>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<!--<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">起止时间
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			 <div class="input-group input-large date-picker input-daterange" data-date="10/11/2012" data-date-format="yyyy/mm/dd">
+            <div class="chufang-time">
+                            <div class="input-icon right"> <i class="fa fa-calendar chufang-time-2"></i>
+                              <input type="text" class="form-control" name="from">
+                            </div>
+                          </div>
+                          <span style="float:left; margin:5px;"> - </span>
+                          <div class="chufang-time">
+                            <div class="input-icon right"> <i class="fa fa-calendar chufang-time-2"></i>
+                              <input type="text" class="form-control" name="to">
+                            </div>
+                          </div>
+                        </div>
+		</div>
+		<div style="clear:both"></div>
+    </div>-->
+	<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">热度
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<select class="bs-select form-control input-large chufang-style22">
+              <option value="AF">一般</option>
+              <option value="AL">重要</option>
+            </select>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1" for="form_control_1">标签
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<select class="js-example-tags form-control" multiple="multiple" data-width="90%" data-filter="true" data-height="300">
+            <option selected="selected">orange</option>
+            <option>white</option>
+            <option selected="selected">purple</option>
+          </select>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1 chufang-table1-style-3" for="form_control_1">内容
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<form class="form-horizontal form-bordered">
+              <div class="form-body">
+                <div class="last">
+                  <div name="summernote" id="summernote_1" style="margin-bottom:0px;"> </div>
+                </div>
+              </div>
+            </form>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	<div class="form-group">
+		<label class="chufang-table1-style-1 chufang-table1-style-3" for="form_control_1">描述
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			<form class="form-horizontal form-bordered">
+              <div class="form-body">
+                <div class="last">
+                  <div name="summernote" id="summernote_2" style="margin-bottom:0px;"> </div>
+                </div>
+              </div>
+            </form>
+		</div>
+		<div style="clear:both"></div>
+    </div>
+	
+	<div class="form-group">
+		<label class="chufang-table1-style-4" for="form_control_1">附件
+			<span class="required" aria-required="true">*</span>
+		</label>
+		<div class="chufang-table1-style-2">
+			
+			
+			
+			
+			
+			
+			
+			 <div class="m-heading-1  chufang-style20 daily-addFile" style="padding: 10px 178px; cursor: pointer;">
+                <tr>
+                  <img src="../icon3.png">
+                 	本地上传 
+                </tr>
+                
+            </div>
+            <div class="input-box" style="width: 50px;height: 30px ;border: 1px solid red;position: absolute;left: 0;top:100px;display: none;">
+                	
+            </div>
+            
+        <table class="table table-hover light chufang-style21 tab-list">
+	          
+        </table>
+            
+			<!--<div>
+				
+				
+        <table class="table table-hover light chufang-style21">
+          <tr>
+            <td width="50%" style="border-top:0px;"><i class="fa fa-image margin-right-10"></i><a>图片1.img</a></td>
+            <td width="20%" style="border-top:0px;">上传人</td>
+            <td width="20%" style="border-top:0px;">1.3M</td>
+            <td width="10%" style="border-top:0px;"><i class="fa fa-trash chufang-style31" style="display:none"></i></td>
+          </tr>
+          <tr>
+            <td width="50%"><i class="fa fa-image margin-right-10"></i><a>图片1.img</a></td>
+            <td width="20%">上传人</td>
+            <td width="20%">1.3M</td>
+            <td width="10%"><i class="fa fa-trash chufang-style31" style="display:none"></i></td>
+          </tr>
+          <tr>
+            <td width="50%"><i class="fa fa-image margin-right-10"></i><a>图片1.img</a></td>
+            <td width="20%">上传人</td>
+            <td width="20%">1.3M</td>
+            <td width="10%"><i class="fa fa-trash chufang-style31" style="display:none"></i></td>
+          </tr>
+          <tr>
+            <td width="50%"><i class="fa fa-image margin-right-10"></i><a>图片1.img</a></td>
+            <td width="20%">上传人</td>
+            <td width="20%">1.3M</td>
+            <td width="10%"><i class="fa fa-trash chufang-style31" style="display:none"></i></td>
+          </tr>
+        </table>
+      </div>-->
+		</div>
+		<div style="clear:both"></div>
+    </div> 
+</div>
+  </div>
+  <div class="modal-footer">
+    <div class="left">
+      <button type="button" class="btn red chufang-yuanjiao btn-outline">取消</button>
+    </div>
+    <div class="right">
+      <button type="button" class="btn red chufang-yuanjiao">新建</button>
+      <button type="button" class="btn red chufang-yuanjiao btn-outline">保存</button>
+    </div>
+  </div>
+</div>
+</div>
+<!-- END CONTAINER --> 
+
+<!--[if lt IE 9]>
+<script src="../assets/global/plugins/respond.min.js"></script>
+<script src="../assets/global/plugins/excanvas.min.js"></script> 
+<![endif]--> 
+
+<script src="../assets/global/plugins/jquery.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/js.cookie.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script> 
+<!-- END CORE PLUGINS --> 
+<!-- BEGIN PAGE LEVEL PLUGINS --> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN THEME GLOBAL SCRIPTS --> 
+<script src="../assets/global/scripts/app.min.js" type="text/javascript"></script> 
+<!-- END THEME GLOBAL SCRIPTS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-select2.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<!-- BEGIN THEME LAYOUT SCRIPTS --> 
+<script src="../assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script> 
+<script src="../assets/layouts/layout/scripts/demo.min.js" type="text/javascript"></script> 
+<script src="../assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script> 
+<!-- END THEME LAYOUT SCRIPTS --> 
+<!-- BEGIN PAGE LEVEL PLUGINS --> 
+<script src="../assets/global/plugins/moment.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/clockface/js/clockface.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<script src="../assets/global/plugins/bootstrap-modal/js/bootstrap-modalmanager.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-modal/js/bootstrap-modal.js" type="text/javascript"></script> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-date-time-pickers.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<!-- BEGIN PAGE LEVEL PLUGINS --> 
+<script src="../assets/global/plugins/bootstrap-wysihtml5/wysihtml5-0.3.0.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-markdown/lib/markdown.js" type="text/javascript"></script> 
+<script src="./../assets/global/plugins/bootstrap-markdown/js/bootstrap-markdown.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/bootstrap-summernote/summernote.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-editors.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<script src="../assets/global/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/typeahead/handlebars.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/typeahead/typeahead.bundle.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-bootstrap-tagsinput.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<script src="../assets/global/plugins/dropzone/dropzone.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/form-dropzone.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<script src="../assets/global/plugins/bootstrap-multiselect/js/bootstrap-multiselect.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-bootstrap-multiselect.min.js" type="text/javascript"></script> 
+<!-- BEGIN PAGE LEVEL PLUGINS --> 
+<script src="../assets/global/plugins/bootstrap-select/js/bootstrap-select.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL PLUGINS --> 
+<!-- BEGIN PAGE LEVEL SCRIPTS --> 
+<script src="../assets/pages/scripts/components-bootstrap-select.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS --> 
+<script src="../assets/global/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="../assets/pages/scripts/components-bootstrap-maxlength.min.js" type="text/javascript"></script>
+
+<script src="../assets/global/plugins/select2/js/select2.full.js" type="text/javascript"></script>
+<script src="../assets/global/plugins/select2/js/prettify.min.js" type="text/javascript"></script> 
+<script src="../assets/global/plugins/select2/js/anchor.min.js" type="text/javascript"></script> 
+<!-- END PAGE LEVEL SCRIPTS -->
+<script src="../assets/global/plugins/icheck/icheck.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="../assets/global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="../assets/pages/scripts/form-icheck.min.js" type="text/javascript"></script>
+        <!-- END PAGE LEVEL SCRIPTS -->
+        
+        
+<!-- END PAGE LEVEL SCRIPTS -->
+</body>
+<script type="text/javascript">
+	
+$(document).ready(function() {
+	
+	
+	$('#responsive').on('show.bs.modal', function () {
+		$('body').css('overflow','hidden');
+	 });
+	
+	$('#responsive').on('hide.bs.modal', function () {
+		$('body').css('overflow','auto');
+	 });
+	
+	$('#queryList button').addClass('chufang-btn-style');
+	$('#selectTopicList button').addClass('chufang-btn-style');
+
+	$("#queryList .dropdown-menu").on("click", function(e) {
+		e.stopPropagation();
+	});
+
+	// $("#eventTimeTitle").on("click", function() {
+	//  $(this).addClass("table-style-hover");
+	// });
+
+	$("#selectType a").on("click", function(e) {
+		$('#selectType li').each(function() {
+			$(this).removeClass("active");
+		});
+		var selectTypeName = $(this).find('span').html();
+		var sourceTypeName = $("#sourceType").find('.active').attr("name");
+		$("#selectTopicTitle").html(selectTypeName+"-"+sourceTypeName)
+		$(this).parent().addClass("active");
+	});
+
+	$("#sourceType a").on("click", function(e) {
+		$('#sourceType li').each(function() {
+			$(this).removeClass("active");
+		});
+		var sourceTypeName = $(this).find('span').html();
+		var selectTypeName = $("#selectType").find('.active').attr("name");
+		$("#selectTopicTitle").html(selectTypeName+"-"+sourceTypeName)
+		$(this).parent().addClass("active");
+	});
+	
+	$("input[type='search']").bind('input propertychange', function() {
+		if ($('#searchTitle').val() == "") {
+			$('#searchIcon').removeClass('fa-times-circle');
+		} else {
+			$('#searchIcon').addClass('fa-times-circle');
+		}
+	});
+	
+	$("input[type='search']").bind('input propertychange', function() {
+		if ($('#searchTitle').val() == "") {
+			$('#searchIcon').removeClass('fa-times-circle');
+		} else {
+			$('#searchIcon').addClass('fa-times-circle');
+		}
+	});
+
+	$("#selectTitle").bind('input propertychange', function() {
+		if ($('#selectTitle').val().length >=25) {
+			
+			$('#selectTitle').addClass('input-text-style');
+		}
+	});
+	
+	$("#selectTopicList tr").hover(function() {
+		if (!$(this).hasClass("chufang-style23")) {
+			$(this).addClass("table-style-hover");
+			$(this).find('button').addClass('chufang-btn-style2');
+		}
+	}, function() {
+		$(this).removeClass("table-style-hover");
+		$(this).find('button').removeClass('chufang-btn-style2');
+	});
+	//行单选点击事件
+	$('#selectTopicList tr').click(function() {
+		$('table tr').each(function() {
+			$(this).removeClass("chufang-style23");
+			$(this).find('button').removeClass('chufang-style24');
+		});
+		$(this).addClass("chufang-style23");
+		$(this).find('button').addClass('chufang-style24');
+	});
+
+	$("table tr").mouseover(function() {
+		$(this).find(".fa-trash").show();
+	});
+	$("table tr").mouseleave(function() {
+		$(this).find(".fa-trash").hide();
+	});
+
+	initTagsSelect();
+	
+	 $('#summernote_1').summernote({height: 200});
+	 $('#summernote_2').summernote({height: 200});
+	 $('#summernote_3').summernote({height: 200});
+});
+
+
+	
+	function doConfirm() {
+		$('#eventTime').removeClass('open');
+	}
+	
+	function doCancel() {
+		$('#eventTime').removeClass('open');
+	}
+	
+	function doClear() {
+		$('#searchTitle').val('');
+		$('#searchIcon').addClass('fa-times-circle');
+		$('#searchIcon').removeClass('fa-times-circle');
+	}
+	
+	// 初始化标签下拉框
+	function initTagsSelect(){
+		$(".js-example-tags").select2({
+		    tags: true, //是否可以自定义tag
+		    createSearchChoice:function(term, data) { 
+		    	alert(22)
+		        if ($(data).filter(function() { 
+		            return this.text.localeCompare(term)===0; 
+		        }).length===0) 
+		        {return {id:term, text:term};} 
+		    },
+		    multiple: true,
+		    data: [{id: 0, text: 'story'},{id: 1, text: 'bug'},{id: 2, text: 'task'}]
+		});
+	}
+</script>
+
+
+
+
+		<!--bo-->
+		
+        <script src="js/new.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+			daily.list();
+		</script>
+
+</html>
